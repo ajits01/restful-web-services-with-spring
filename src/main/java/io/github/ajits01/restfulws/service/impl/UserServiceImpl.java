@@ -16,11 +16,11 @@ public class UserServiceImpl implements UserService {
   private static int USERS_COUNT = 104;
 
   static {
-    users.add(new User(100, "John", new Date()));
-    users.add(new User(101, "Ron", new Date()));
-    users.add(new User(102, "Robert", new Date()));
-    users.add(new User(103, "Kristen", new Date()));
-    users.add(new User(104, "Enrique", new Date()));
+    users.add(new User(100, "John", new Date(), null));
+    users.add(new User(101, "Ron", new Date(), null));
+    users.add(new User(102, "Robert", new Date(), null));
+    users.add(new User(103, "Kristen", new Date(), null));
+    users.add(new User(104, "Enrique", new Date(), null));
   }
 
   public Optional<User> findOne(int id) {
